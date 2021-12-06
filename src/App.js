@@ -1,25 +1,49 @@
-import logo from './logo.svg';
+/**
+ * APP.JS - COMPONENTES
+ * 1. IMPORTACIONES
+ */
+
+
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './components/Main'
+
+/**
+ * 
+ * 2. FUNCIÓN
+ */
 
 function App() {
+
+  // MANEJO DE VARIABLES Y OTRAS FUNCIONES
+  const bootcamp = "Ironhack"
+
+  // ESTE FORMATO NO ES HTML COMPLETAMENTE, SINO TAMBIÉN INVOLUCRA JAVASCRIPT AL SIMULTÁNEO.
+  // HTML + JS = JSX
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Hola mundo</p>
+      <p>Rodrigo Samaniego</p>
+      <p>{12 * 12}</p>
+      <p>{bootcamp}</p>
+
+      <Header nombre="Rodrigo" ciudad="CDMX" />
+      <Header nombre="UwU" ciudad="Tlaxcala" />
+      <Header />
+      <hr />
+
+      <Main />
+
+      <hr />
+
+      <Footer mes="diciembre 2021" />
+
+
     </div>
   );
 }
 
+
+// 3. EXPORTACIÓN
 export default App;
