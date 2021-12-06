@@ -29,8 +29,8 @@ function App() {
       <p>{bootcamp}</p>
 
       <Header nombre="Rodrigo" ciudad="CDMX" />
-      <Header nombre="UwU" ciudad="Tlaxcala" />
-      <Header />
+      {/* <Header nombre="UwU" ciudad="Tlaxcala" />
+      <Header /> */}
       <hr />
 
       <Main />
